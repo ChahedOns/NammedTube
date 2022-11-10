@@ -49,7 +49,7 @@ if ( mkfifo(F2,0666) == -1 ){
 /* Lecture de la réponse */
 		read(f2,&s , sizeof (struct response ));
 /* Envoi du signal SIGUSR1 au serveur */
-		kill (s.ids,SIGUSR1);
+		//kill (s.ids,SIGUSR1);
 /* Traitement local de la réponse */
 		
 		printf("La réponse du Serveur est : ");
@@ -57,6 +57,5 @@ if ( mkfifo(F2,0666) == -1 ){
 		for (i=0; i<x;i++){
 			printf("%d ", s.t[i]);
 		}
-	close(f1);
-	close(f2);
+
 }
