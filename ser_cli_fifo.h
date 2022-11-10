@@ -15,14 +15,14 @@ int f2 = mkfifo(fifo2,S_IRUSR | S_IRGRP | S_IROTH | S_IWUSR | S_IWGRP | S_IWOTH)
 
 // Structs
 
-typdef struct request
+struct request
 {
 	int id; 
 	int n;
 };
 typdef struct request request; 
 
-typdef struct response
+struct response
 {
 	int idc;
 	int ids;
