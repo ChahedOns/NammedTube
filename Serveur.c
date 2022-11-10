@@ -56,7 +56,8 @@ while(1){
 		 int i;
 		 for (i = 0; i < rq.n; i++)
 		 {
-			 rs.t[i] = rand();
+			 rs.t[i] = rand()%50;
+			 printf("valeur  =%d \n", rs.t[i]);
 		}
 		rs.idc = rq.id;
 		rs.ids = getpid();
